@@ -18,7 +18,7 @@ Mirai 是一个在全平台下运行，提供 QQ Android 和 TIM PC 协议支持
 </div>
 
 
-## EdwApiCore
+## **EdwApiCore**
 项目全名：EmptyDreamWorld Api Core For Minecraft Server
 By **晓空**
 
@@ -28,7 +28,7 @@ EdwApiCore是一个基于Mirai框架的Java插件
 
 空梦框架是隶属于我们永恒计划中的一个项目，如果您对此感兴趣可以访问[这里](https://github.com/KJZH001/EmptyDreamWorld_PHP_Development-framework)来获取更多的信息
 
-## **一切开发旨在学习，请勿用于非法用途**
+### **一切开发旨在学习，请勿用于非法用途**
 
 **[Mirai](https://github.com/mamoe/mirai)** 是一个在全平台下运行，提供 QQ Android 和 TIM PC 协议支持的高效率机器人库
 
