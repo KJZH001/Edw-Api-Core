@@ -31,12 +31,18 @@ public class main {
 			String contant=输入.nextLine();
 			正则匹配 zz=new 正则匹配();
 			contant=zz.match(contant);
+			//权限检查
+			
 			//System.out.println("你输入的是:"+contant);
-			if(contant.equals("结束"))
+			if(contant.equals("结束控制台"))
 			{
 				System.out.println("控制台已经成功关闭！");
 				//结束循环
 				break;
+			}
+			else if(contant.equals("未匹配到内容！"))
+			{
+				System.out.println("您输入的指令有误！请重新输入！");
 			}
 			else
 			{
