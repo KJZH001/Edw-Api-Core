@@ -1,10 +1,14 @@
 package moeworld.XiaoKong.mirai_MinecraftEdwApiCore;
 
+import net.kronos.rkon.core.Rcon;
+import net.kronos.rkon.core.ex.AuthenticationException;
 import net.mamoe.mirai.console.plugins.Config;
 import net.mamoe.mirai.console.plugins.ConfigSection;
 import net.mamoe.mirai.console.plugins.ConfigSectionFactory;
 import net.mamoe.mirai.console.plugins.PluginBase;
 import net.mamoe.mirai.message.GroupMessage;
+
+import java.io.IOException;
 
 public class Mirai extends PluginBase {
 	
@@ -25,7 +29,37 @@ public class Mirai extends PluginBase {
 
             //定义群消息指令开头
             if(messageInString.contains("..")) {
-                //event.getSubject().sendMessage("#测试消息被触发了");
+            	//获取发信者的qq
+                Long QQsender=event.getSender().getId();
+                //event.getSubject().sendMessage(QQsender+"触发了测试的消息指令头");
+
+				//尝试远程连接
+				try {
+					Rcon rcon = new Rcon(全局.远程地址, 全局.端口, 全局.密码.getBytes());
+					//匹配内容
+					String contant=messageInString;
+					正则匹配 zz=new 正则匹配();
+					contant=zz.match(contant,QQsender);
+
+					if(contant.equals("结束控制台"))
+					{
+						event.getSubject().sendMessage("控制台已经成功关闭！");
+					}
+					else if(contant.equals("未匹配到内容！"))
+					{
+						event.getSubject().sendMessage("您输入的指令有误！请重新输入！");
+					}
+					else
+					{
+						String result = rcon.command(contant);
+						// 输出结果
+						event.getSubject().sendMessage(result);
+					}
+				} catch (IOException e) {
+					e.printStackTrace();
+				} catch (AuthenticationException e) {
+					e.printStackTrace();
+				}
                 return;
             }
 

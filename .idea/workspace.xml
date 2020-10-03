@@ -30,17 +30,28 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75af4363-7877-468a-b815-8bc0c779dfe1" name="Default Changelist" comment="更新了mirai部分（用于调试）&#10;更换开发环境为IDEA">
+    <list default="true" id="75af4363-7877-468a-b815-8bc0c779dfe1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/rkon_core_1_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Mirai]MinecraftEdwApiCore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/[Mirai]MinecraftEdwApiCore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/Mirai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/Mirai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/全局.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/全局.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/权限.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/权限.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/正则匹配.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/正则匹配.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -57,13 +68,37 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../导出的jar/mirai_MinecraftEdwApiCore" />
-    <property name="project.structure.last.edited" value="项目" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jar/rkon-core-1.1.2.jar" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="moeworld.XiaoKong.mirai_MinecraftEdwApiCore.main" />
+      <module name="[Mirai]MinecraftEdwApiCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="moeworld.XiaoKong.mirai_MinecraftEdwApiCore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="75af4363-7877-468a-b815-8bc0c779dfe1" name="Default Changelist" comment="" />
@@ -104,28 +139,53 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新了mirai部分（用于调试）&#10;更换开发环境为IDEA" />
     <option name="LAST_COMMIT_MESSAGE" value="更新了mirai部分（用于调试）&#10;更换开发环境为IDEA" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="534" y="57" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1601713792954">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="534" y="57" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1366.728@0.0.1366.728" timestamp="1601713792954" />
     <state x="426" y="186" key="#通知" timestamp="1601696008897">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="426" y="186" key="#通知/0.0.1366.728@0.0.1366.728" timestamp="1601696008897" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1601696053713">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1601713781831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601696053713" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1601696061396">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601713781831" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1601712951797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601696061396" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601712951797" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1601712951797">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601712951797" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1601712951796">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601712951796" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1601712951797">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601712951797" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1601713859967">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601713859967" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601696478664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601696478664" />
+    <state x="234" y="0" key="new project wizard" timestamp="1601713289840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="234" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1601713289840" />
     <state x="473" y="236" width="590" height="375" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1601635698814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

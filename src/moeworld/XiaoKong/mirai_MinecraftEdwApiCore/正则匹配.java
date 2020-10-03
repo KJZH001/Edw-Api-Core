@@ -9,8 +9,8 @@ public class 正则匹配 {
     {
     	 
         // 按指定模式在字符串查找
-        String line = "#执行 help 2";
-        String pattern = "^#执行 [\\w+\\s]+";
+        String line = "..执行 help 2";
+        String pattern = "^..执行 [\\w+\\s]+";
    
         // 创建 Pattern 对象
         Pattern r = Pattern.compile(pattern);
@@ -31,7 +31,7 @@ public class 正则匹配 {
          }
      }
     
-    public String match(String line)
+    public String match(String line,Long QQsender)
     {
     	if (line.contains("执行"))
     	{
@@ -51,13 +51,13 @@ public class 正则匹配 {
     	}
     	else if(line.contains("申请白名单"))
     	{
-    		String pattern = "^#申请白名单 [\\w+\\s]+";   
+    		String pattern = "^..申请白名单 [\\w+\\s]+";
             Pattern r = Pattern.compile(pattern);
             Matcher m = r.matcher(line);
             //System.out.println(line);
             if (m.find( )) {
                 String 玩家id=m.group(0).substring(7);
-                String 命令="wl add "+玩家id+" 3335115162";
+                String 命令="wl add "+玩家id+QQsender;
                 return 命令;
              } 
             else 
@@ -65,7 +65,7 @@ public class 正则匹配 {
                 return "未匹配到内容！";
              }
     	}
-    	else if(line.equals("#结束"))
+    	else if(line.equals("..结束"))
     	{
     		return "结束控制台";
     	}

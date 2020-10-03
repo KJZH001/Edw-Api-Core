@@ -1,5 +1,5 @@
 name: MinecraftEdwApiCore
-author: SakuraYoruRinSora
+author: MoeRinSora
 main: moeworld.XiaoKong.mirai_MinecraftEdwApiCore.Mirai
 version: "1.0.0"
-info: "EmptyDreamWorld Api Core for Minecraft."
+info: "基于Mirai的空梦框架和Minecraft进行交互的核心插件"

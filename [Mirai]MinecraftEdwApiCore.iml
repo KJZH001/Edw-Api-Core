@@ -27,7 +27,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="mirai-console-0.5.2.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../ziYuan/jar/Mirai/mirai-console-0.5.2.jar!/" />
@@ -36,7 +36,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="mirai-console-1.0-dev-1.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../ziYuan/jar/Mirai/mirai-console-1.0-dev-1.jar!/" />
@@ -45,7 +45,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="mirai-console-wrapper-1.3.0.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../ziYuan/jar/Mirai/mirai-console-wrapper-1.3.0.jar!/" />
@@ -54,7 +54,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="mirai-core-qqandroid-1.1.3.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../ziYuan/jar/Mirai/mirai-core-qqandroid-1.1.3.jar!/" />
@@ -63,5 +63,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="rkon-core-1.1.2" level="project" />
   </component>
 </module>

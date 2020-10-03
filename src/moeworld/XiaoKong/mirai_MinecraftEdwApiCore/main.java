@@ -16,10 +16,10 @@ public class main {
 	
 	public static void main(String[] args) throws IOException, AuthenticationException
 	{
-	System.out.println("请注意，这是一个Mirai console插件" +
-			"您现在直接启动了用于开发的调试模式，这并不能起到机器人的作用" +
-			"如果这不是您想要的结果，请关闭它，然后将它放入到mirai console的插件目录中" +
-			"并从Mirai启动它");
+	System.out.println("请注意，这是一个Mirai console插件\n" +
+			"您现在直接启动了用于开发的调试模式，这并不能起到机器人的作用\n" +
+			"如果这不是您想要的结果，请关闭它，然后将它放入到mirai console的插件目录中\n" +
+			"并从Mirai启动它\n");
 	System.out.println("空梦世界Api核心正在启动...\n请稍后...");
 	
 	try {
@@ -33,7 +33,7 @@ public class main {
 			System.out.println("请输入要执行的指令：");
 			String contant=输入.nextLine();
 			正则匹配 zz=new 正则匹配();
-			contant=zz.match(contant);
+			contant=zz.match(contant, Long.valueOf(全局.模拟用户));
 			//权限检查
 			
 			//System.out.println("你输入的是:"+contant);
@@ -63,6 +63,7 @@ public class main {
 		//连接失败
 		System.out.print("发生了意外的错误！无法与Minecraft服务器控制台正常通讯！\n"
 				+ "请检查您填写的参数是否正确！");
+		e.printStackTrace();
 	}
 	}
 }
