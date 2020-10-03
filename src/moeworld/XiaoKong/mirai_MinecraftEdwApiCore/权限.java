@@ -1,9 +1,9 @@
 package moeworld.XiaoKong.mirai_MinecraftEdwApiCore;
 
-public class È¨ÏŞ {
-	public String ¼ì²â(String ÈººÅ,String Ö´ĞĞÕß)
+public class æƒé™ {
+	public String æ£€æµ‹(String ç¾¤å·,String æ‰§è¡Œè€…)
 	{
-		if(ÈººÅ.contains(È«¾Ö.ÆôÓÃµÄÈº)&&Ö´ĞĞÕß.contains(È«¾Ö.¹ÜÀíÔ±QQ))
+		if(ç¾¤å·.contains(å…¨å±€.å¯ç”¨çš„ç¾¤)&&æ‰§è¡Œè€….contains(å…¨å±€.ç®¡ç†å‘˜QQ))
 		{
 			return "true";
 		}

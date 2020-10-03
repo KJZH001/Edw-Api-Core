@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="mirai_MinecraftEdwApiCore">
+    <output-path>$PROJECT_DIR$/../../导出的jar/mirai_MinecraftEdwApiCore</output-path>
+    <root id="archive" name="mirai_MinecraftEdwApiCore.jar">
+      <element id="module-output" name="[Mirai]MinecraftEdwApiCore" />
+    </root>
+  </artifact>
+</component>

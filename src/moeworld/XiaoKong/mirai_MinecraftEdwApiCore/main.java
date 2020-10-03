@@ -1,6 +1,6 @@
 /* 
- * Copyright (c) 2018-2020 Ïş¿Õ All rights reserved.
- * »ùÓÚMirai¿ò¼Ü¿ª·¢µÄ ¿ÕÃÎÊÀ½ç Minecraft ·şÎñÆ÷ Api ºËĞÄ
+ * Copyright (c) 2018-2020 æ™“ç©º All rights reserved.
+ * åŸºäºMiraiæ¡†æ¶å¼€å‘çš„ ç©ºæ¢¦ä¸–ç•Œ Minecraft æœåŠ¡å™¨ Api æ ¸å¿ƒ
  */
 
 
@@ -16,50 +16,53 @@ public class main {
 	
 	public static void main(String[] args) throws IOException, AuthenticationException
 	{
-	
-	System.out.println("¿ÕÃÎÊÀ½çApiºËĞÄÕıÔÚÆô¶¯...\nÇëÉÔºó...");
+	System.out.println("è¯·æ³¨æ„ï¼Œè¿™æ˜¯ä¸€ä¸ªMirai consoleæ’ä»¶" +
+			"æ‚¨ç°åœ¨ç›´æ¥å¯åŠ¨äº†ç”¨äºå¼€å‘çš„è°ƒè¯•æ¨¡å¼ï¼Œè¿™å¹¶ä¸èƒ½èµ·åˆ°æœºå™¨äººçš„ä½œç”¨" +
+			"å¦‚æœè¿™ä¸æ˜¯æ‚¨æƒ³è¦çš„ç»“æœï¼Œè¯·å…³é—­å®ƒï¼Œç„¶åå°†å®ƒæ”¾å…¥åˆ°mirai consoleçš„æ’ä»¶ç›®å½•ä¸­" +
+			"å¹¶ä»Miraiå¯åŠ¨å®ƒ");
+	System.out.println("ç©ºæ¢¦ä¸–ç•ŒApiæ ¸å¿ƒæ­£åœ¨å¯åŠ¨...\nè¯·ç¨å...");
 	
 	try {
-		System.out.println("ÕıÔÚ³¢ÊÔ´´½¨RCONÁ¬½Ó...");
-		//´´½¨Á¬½Ó
-		Rcon rcon = new Rcon(È«¾Ö.Ô¶³ÌµØÖ·, È«¾Ö.¶Ë¿Ú, È«¾Ö.ÃÜÂë.getBytes());
-		//»ñÈ¡ÊäÈë
-		Scanner ÊäÈë=new Scanner(System.in);
+		System.out.println("æ­£åœ¨å°è¯•åˆ›å»ºRCONè¿æ¥...");
+		//åˆ›å»ºè¿æ¥
+		Rcon rcon = new Rcon(å…¨å±€.è¿œç¨‹åœ°å€, å…¨å±€.ç«¯å£, å…¨å±€.å¯†ç .getBytes());
+		//è·å–è¾“å…¥
+		Scanner è¾“å…¥=new Scanner(System.in);
 		while(true)
 		{
-			System.out.println("ÇëÊäÈëÒªÖ´ĞĞµÄÖ¸Áî£º");
-			String contant=ÊäÈë.nextLine();
-			ÕıÔòÆ¥Åä zz=new ÕıÔòÆ¥Åä();
+			System.out.println("è¯·è¾“å…¥è¦æ‰§è¡Œçš„æŒ‡ä»¤ï¼š");
+			String contant=è¾“å…¥.nextLine();
+			æ­£åˆ™åŒ¹é… zz=new æ­£åˆ™åŒ¹é…();
 			contant=zz.match(contant);
-			//È¨ÏŞ¼ì²é
+			//æƒé™æ£€æŸ¥
 			
-			//System.out.println("ÄãÊäÈëµÄÊÇ:"+contant);
-			if(contant.equals("½áÊø¿ØÖÆÌ¨"))
+			//System.out.println("ä½ è¾“å…¥çš„æ˜¯:"+contant);
+			if(contant.equals("ç»“æŸæ§åˆ¶å°"))
 			{
-				System.out.println("¿ØÖÆÌ¨ÒÑ¾­³É¹¦¹Ø±Õ£¡");
-				//½áÊøÑ­»·
+				System.out.println("æ§åˆ¶å°å·²ç»æˆåŠŸå…³é—­ï¼");
+				//ç»“æŸå¾ªç¯
 				break;
 			}
-			else if(contant.equals("Î´Æ¥Åäµ½ÄÚÈİ£¡"))
+			else if(contant.equals("æœªåŒ¹é…åˆ°å†…å®¹ï¼"))
 			{
-				System.out.println("ÄúÊäÈëµÄÖ¸ÁîÓĞÎó£¡ÇëÖØĞÂÊäÈë£¡");
+				System.out.println("æ‚¨è¾“å…¥çš„æŒ‡ä»¤æœ‰è¯¯ï¼è¯·é‡æ–°è¾“å…¥ï¼");
 			}
 			else
 			{
 				String result = rcon.command(contant);
-				// Êä³ö½á¹û
+				// è¾“å‡ºç»“æœ
 				System.out.println(result);
 			}
 		}
-		//¹Ø±ÕÊäÈë
-		ÊäÈë.close();
+		//å…³é—­è¾“å…¥
+		è¾“å…¥.close();
 		
 	}
 	catch(Exception e)
 	{
-		//Á¬½ÓÊ§°Ü
-		System.out.print("·¢ÉúÁËÒâÍâµÄ´íÎó£¡ÎŞ·¨ÓëMinecraft·şÎñÆ÷¿ØÖÆÌ¨Õı³£Í¨Ñ¶£¡\n"
-				+ "Çë¼ì²éÄúÌîĞ´µÄ²ÎÊıÊÇ·ñÕıÈ·£¡");
+		//è¿æ¥å¤±è´¥
+		System.out.print("å‘ç”Ÿäº†æ„å¤–çš„é”™è¯¯ï¼æ— æ³•ä¸MinecraftæœåŠ¡å™¨æ§åˆ¶å°æ­£å¸¸é€šè®¯ï¼\n"
+				+ "è¯·æ£€æŸ¥æ‚¨å¡«å†™çš„å‚æ•°æ˜¯å¦æ­£ç¡®ï¼");
 	}
 	}
 }

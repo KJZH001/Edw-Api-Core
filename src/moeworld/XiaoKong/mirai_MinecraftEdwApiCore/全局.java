@@ -1,14 +1,14 @@
 package moeworld.XiaoKong.mirai_MinecraftEdwApiCore;
 
-public class È«¾Ö {
-	static String Ô¶³ÌµØÖ·="192.168.1.111";
-	static int ¶Ë¿Ú=55565;
-	static String ÃÜÂë="XiaoKong233";
-	static String ¹ÜÀíÔ±QQ="2802007619|3335116152";
-	static String ÆôÓÃµÄÈº="923991620";
-	static String µ÷ÊÔÄ£Ê½="true";
+public class å…¨å±€ {
+	static String è¿œç¨‹åœ°å€="192.168.1.111";
+	static int ç«¯å£=55565;
+	static String å¯†ç ="XiaoKong233";
+	static String ç®¡ç†å‘˜QQ="2802007619|3335116152";
+	static String å¯ç”¨çš„ç¾¤="923991620";
+	static String è°ƒè¯•æ¨¡å¼="true";
 	
-	//µ÷ÊÔÊ±µÄÅäÖÃÏîÄ¿
-	static String Ä£ÄâÈº="923991620";
-	static String Ä£ÄâÓÃ»§="3335115152";
+	//è°ƒè¯•æ—¶çš„é…ç½®é¡¹ç›®
+	static String æ¨¡æ‹Ÿç¾¤="923991620";
+	static String æ¨¡æ‹Ÿç”¨æˆ·="3335115152";
 }

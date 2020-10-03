@@ -9,34 +9,45 @@ import net.mamoe.mirai.message.GroupMessage;
 public class Mirai extends PluginBase {
 	
 	
-	//²å¼ş±»¼ÓÔØ
+	//æ’ä»¶è¢«åŠ è½½
 	public void onLoad()
 	{
 		super.onLoad();
 
 	}
-	//²å¼ş³õÊ¼»¯
+	//æ’ä»¶åˆå§‹åŒ–
 	public void onEnable() 
 	 {
-		//¼àÌıÈºÏûÏ¢
+		//ç›‘å¬ç¾¤æ¶ˆæ¯
 		this.getEventListener().subscribeAlways(GroupMessage.class, (GroupMessage event) -> {
 
             String messageInString = event.getMessage().toString();
 
-            if(!messageInString.contains("#²âÊÔÏûÏ¢1")) {
-            	event.getSubject().sendMessage("#²âÊÔÏûÏ¢1±»´¥·¢ÁË");
+            //å®šä¹‰ç¾¤æ¶ˆæ¯æŒ‡ä»¤å¼€å¤´
+            if(messageInString.contains("..")) {
+                //event.getSubject().sendMessage("#æµ‹è¯•æ¶ˆæ¯è¢«è§¦å‘äº†");
+                return;
+            }
+
+
+            /*
+            æµ‹è¯•æ¶ˆæ¯
+
+            if(messageInString.contains("#æµ‹è¯•æ¶ˆæ¯1")) {
+            	event.getSubject().sendMessage("#æµ‹è¯•æ¶ˆæ¯1è¢«è§¦å‘äº†");
                 return;
             }
             
-            if(!messageInString.contains("#²âÊÔÏûÏ¢2")) {
-            	event.getSubject().sendMessage("#²âÊÔÏûÏ¢2±»´¥·¢ÁË");
+            if(messageInString.contains("#æµ‹è¯•æ¶ˆæ¯2")) {
+            	event.getSubject().sendMessage("#æµ‹è¯•æ¶ˆæ¯2è¢«è§¦å‘äº†");
                 return;
             }
+             */
 
 		});
 		
 	 }
-	 //²å¼ş±»¹Ø±Õ
+	 //æ’ä»¶è¢«å…³é—­
 	 public void onDisable()
 	 {
 		 

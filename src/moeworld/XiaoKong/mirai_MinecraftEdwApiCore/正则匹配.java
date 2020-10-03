@@ -3,75 +3,75 @@ package moeworld.XiaoKong.mirai_MinecraftEdwApiCore;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ÕıÔòÆ¥Åä {
-	//µ÷ÊÔÓÃ
+public class æ­£åˆ™åŒ¹é… {
+	//è°ƒè¯•ç”¨
     public static void main( String args[] )
     {
     	 
-        // °´Ö¸¶¨Ä£Ê½ÔÚ×Ö·û´®²éÕÒ
-        String line = "#Ö´ĞĞ help 2";
-        String pattern = "^#Ö´ĞĞ [\\w+\\s]+";
+        // æŒ‰æŒ‡å®šæ¨¡å¼åœ¨å­—ç¬¦ä¸²æŸ¥æ‰¾
+        String line = "#æ‰§è¡Œ help 2";
+        String pattern = "^#æ‰§è¡Œ [\\w+\\s]+";
    
-        // ´´½¨ Pattern ¶ÔÏó
+        // åˆ›å»º Pattern å¯¹è±¡
         Pattern r = Pattern.compile(pattern);
    
-        // ÏÖÔÚ´´½¨ matcher ¶ÔÏó
+        // ç°åœ¨åˆ›å»º matcher å¯¹è±¡
         Matcher m = r.matcher(line);
         if (m.find( )) {
             System.out.println("Found value: " + m.group(0) );
-            String ÃüÁî=m.group(0).substring(4);
-            System.out.println("½ØÈ¡³öµÄÃüÁîÎª£º"+ÃüÁî);
+            String å‘½ä»¤=m.group(0).substring(4);
+            System.out.println("æˆªå–å‡ºçš„å‘½ä»¤ä¸ºï¼š"+å‘½ä»¤);
             /*
             System.out.println("Found value: " + m.group(1) );
             System.out.println("Found value: " + m.group(2) );
             System.out.println("Found value: " + m.group(3) ); 
             */
          } else {
-            System.out.println("Î´ÕÒµ½Æ¥ÅäµÄÄÚÈİ£¡");
+            System.out.println("æœªæ‰¾åˆ°åŒ¹é…çš„å†…å®¹ï¼");
          }
      }
     
     public String match(String line)
     {
-    	if (line.contains("Ö´ĞĞ"))
+    	if (line.contains("æ‰§è¡Œ"))
     	{
-            String pattern = "^#Ö´ĞĞ [\\w+\\s]+";   
+            String pattern = "^..æ‰§è¡Œ [\\w+\\s]+";
             Pattern r = Pattern.compile(pattern);
             Matcher m = r.matcher(line);
             //System.out.println(line);
             if (m.find( )) {
-                String ÃüÁî=m.group(0).substring(4);
-                //System.out.println("½ØÈ¡³öµÄÃüÁîÎª£º"+ÃüÁî);
-                return ÃüÁî;
+                String å‘½ä»¤=m.group(0).substring(4);
+                //System.out.println("æˆªå–å‡ºçš„å‘½ä»¤ä¸ºï¼š"+å‘½ä»¤);
+                return å‘½ä»¤;
              } 
             else 
              {
-                return "Î´Æ¥Åäµ½ÄÚÈİ£¡";
+                return "æœªåŒ¹é…åˆ°å†…å®¹ï¼";
              }
     	}
-    	else if(line.contains("ÉêÇë°×Ãûµ¥"))
+    	else if(line.contains("ç”³è¯·ç™½åå•"))
     	{
-    		String pattern = "^#ÉêÇë°×Ãûµ¥ [\\w+\\s]+";   
+    		String pattern = "^#ç”³è¯·ç™½åå• [\\w+\\s]+";   
             Pattern r = Pattern.compile(pattern);
             Matcher m = r.matcher(line);
             //System.out.println(line);
             if (m.find( )) {
-                String Íæ¼Òid=m.group(0).substring(7);
-                String ÃüÁî="wl add "+Íæ¼Òid+" 3335115162";
-                return ÃüÁî;
+                String ç©å®¶id=m.group(0).substring(7);
+                String å‘½ä»¤="wl add "+ç©å®¶id+" 3335115162";
+                return å‘½ä»¤;
              } 
             else 
              {
-                return "Î´Æ¥Åäµ½ÄÚÈİ£¡";
+                return "æœªåŒ¹é…åˆ°å†…å®¹ï¼";
              }
     	}
-    	else if(line.equals("#½áÊø"))
+    	else if(line.equals("#ç»“æŸ"))
     	{
-    		return "½áÊø¿ØÖÆÌ¨";
+    		return "ç»“æŸæ§åˆ¶å°";
     	}
     	else 
         {
-           return "Î´Æ¥Åäµ½ÄÚÈİ£¡";
+           return "æœªåŒ¹é…åˆ°å†…å®¹ï¼";
         }
 
     }
