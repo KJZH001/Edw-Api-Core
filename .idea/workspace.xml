@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="mirai_MinecraftEdwApiCore" />
+      <artifact name="[Mirai]MinecraftEdwApiCore:jar" />
     </artifacts-to-build>
   </component>
   <component name="BranchesTreeState">
@@ -30,16 +30,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75af4363-7877-468a-b815-8bc0c779dfe1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/rkon_core_1_1_2.xml" afterDir="false" />
+    <list default="true" id="75af4363-7877-468a-b815-8bc0c779dfe1" name="Default Changelist" comment="一些小修改">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/_Mirai_MinecraftEdwApiCore_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mirai_MinecraftEdwApiCore.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/[Mirai]MinecraftEdwApiCore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/[Mirai]MinecraftEdwApiCore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/Mirai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/Mirai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/全局.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/全局.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/正则匹配.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moeworld/XiaoKong/mirai_MinecraftEdwApiCore/正则匹配.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +69,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jar/rkon-core-1.1.2.jar" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../导出的jar/mirai_MinecraftEdwApiCore" />
+    <property name="project.structure.last.edited" value="构件" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -143,41 +143,50 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新了mirai部分（用于调试）&#10;更换开发环境为IDEA" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了mirai部分（用于调试）&#10;更换开发环境为IDEA" />
+    <MESSAGE value="一些小修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="一些小修改" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="434" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1601779446455">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="434" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1601779446455" />
     <state x="534" y="57" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1601713792954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="534" y="57" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1366.728@0.0.1366.728" timestamp="1601713792954" />
+    <state x="434" y="118" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1601777918814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="434" y="118" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601777918814" />
     <state x="426" y="186" key="#通知" timestamp="1601696008897">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="426" y="186" key="#通知/0.0.1366.728@0.0.1366.728" timestamp="1601696008897" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1601713781831">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1601779510663">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601713781831" />
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1601712951797">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601779510663" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1601783678223">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601712951797" />
-    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1601712951797">
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601783678223" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1601783678223">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601712951797" />
-    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1601712951796">
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601783678223" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1601783678199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601712951796" />
-    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1601712951797">
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601783678199" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1601783678223">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601712951797" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1601713859967">
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601783678223" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1601780878738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601713859967" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601780878738" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601696478664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

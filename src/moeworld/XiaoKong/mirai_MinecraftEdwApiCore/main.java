@@ -36,7 +36,7 @@ public class main {
 			contant=zz.match(contant, Long.valueOf(全局.模拟用户));
 			//权限检查
 			
-			//System.out.println("你输入的是:"+contant);
+			System.out.println("你输入的是:"+contant);
 			if(contant.equals("结束控制台"))
 			{
 				System.out.println("控制台已经成功关闭！");

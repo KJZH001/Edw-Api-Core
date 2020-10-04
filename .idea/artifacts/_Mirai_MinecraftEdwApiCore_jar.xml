@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="[Mirai]MinecraftEdwApiCore:jar">
+    <output-path>$PROJECT_DIR$/../../导出的jar/mirai_MinecraftEdwApiCore</output-path>
+    <root id="archive" name="[Mirai]MinecraftEdwApiCore.jar">
+      <element id="module-output" name="[Mirai]MinecraftEdwApiCore" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ziYuan/jar/Mirai/mirai-core-qqandroid-1.1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ziYuan/jar/RCON/rkon-core-1.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ziYuan/jar/Mirai/mirai-console-0.5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ziYuan/jar/Mirai/mirai-console-1.0-dev-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ziYuan/jar/Mirai/mirai-console-wrapper-1.3.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

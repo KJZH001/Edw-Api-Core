@@ -1,10 +1,8 @@
 package moeworld.XiaoKong.mirai_MinecraftEdwApiCore;
 
 import net.kronos.rkon.core.Rcon;
-import net.kronos.rkon.core.ex.AuthenticationException;
-import net.mamoe.mirai.console.plugins.Config;
-import net.mamoe.mirai.console.plugins.ConfigSection;
-import net.mamoe.mirai.console.plugins.ConfigSectionFactory;
+import net.kronos.rkon.core.ex.*;
+
 import net.mamoe.mirai.console.plugins.PluginBase;
 import net.mamoe.mirai.message.GroupMessage;
 
@@ -20,7 +18,7 @@ public class Mirai extends PluginBase {
 
 	}
 	//插件初始化
-	public void onEnable() 
+	public void onEnable()
 	 {
 		//监听群消息
 		this.getEventListener().subscribeAlways(GroupMessage.class, (GroupMessage event) -> {
@@ -38,6 +36,15 @@ public class Mirai extends PluginBase {
 					Rcon rcon = new Rcon(全局.远程地址, 全局.端口, 全局.密码.getBytes());
 					//匹配内容
 					String contant=messageInString;
+					contant=contant.substring(contant.indexOf("]")+1);
+
+                    if(全局.调试)
+                    {
+                        event.getSubject().sendMessage("捕获到的内容为：\n"+messageInString+
+                                "\n截取到的内容为：\n"+contant);
+                    }
+
+
 					正则匹配 zz=new 正则匹配();
 					contant=zz.match(contant,QQsender);
 
@@ -47,10 +54,17 @@ public class Mirai extends PluginBase {
 					}
 					else if(contant.equals("未匹配到内容！"))
 					{
-						event.getSubject().sendMessage("您输入的指令有误！请重新输入！");
+                        if(全局.调试)
+                        {
+                            event.getSubject().sendMessage("您输入的指令有误！请重新输入！");
+                        }
 					}
 					else
 					{
+                        if(全局.调试)
+                        {
+                            event.getSubject().sendMessage("传入的指令为：\n"+contant);
+                        }
 						String result = rcon.command(contant);
 						// 输出结果
 						event.getSubject().sendMessage(result);

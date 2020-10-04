@@ -3,6 +3,8 @@ package moeworld.XiaoKong.mirai_MinecraftEdwApiCore;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static java.lang.System.err;
+
 public class 正则匹配 {
 	//调试用
     public static void main( String args[] )
@@ -38,10 +40,19 @@ public class 正则匹配 {
             String pattern = "^..执行 [\\w+\\s]+";
             Pattern r = Pattern.compile(pattern);
             Matcher m = r.matcher(line);
-            //System.out.println(line);
+            if(全局.调试)
+            {
+                System.out.println(line);
+            }
+
+
             if (m.find( )) {
-                String 命令=m.group(0).substring(4);
-                //System.out.println("截取出的命令为："+命令);
+                String 命令=m.group(0).substring(5);
+                if(全局.调试)
+                {
+                    System.out.println("截取出的命令为："+命令);
+                }
+
                 return 命令;
              } 
             else 
@@ -54,10 +65,14 @@ public class 正则匹配 {
     		String pattern = "^..申请白名单 [\\w+\\s]+";
             Pattern r = Pattern.compile(pattern);
             Matcher m = r.matcher(line);
-            //System.out.println(line);
+            if(全局.调试)
+            {
+                System.out.println(line);
+            }
+
             if (m.find( )) {
-                String 玩家id=m.group(0).substring(7);
-                String 命令="wl add "+玩家id+QQsender;
+                String 玩家id=m.group(0).substring(8);
+                String 命令="wl add "+玩家id+" "+QQsender;
                 return 命令;
              } 
             else 

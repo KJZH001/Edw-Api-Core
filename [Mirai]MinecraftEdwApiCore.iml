@@ -18,7 +18,7 @@
     </content>
     <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="rkon-core-1.1.2.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../ziYuan/jar/RCON/rkon-core-1.1.2.jar!/" />
@@ -63,6 +63,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="rkon-core-1.1.2" level="project" />
   </component>
 </module>
