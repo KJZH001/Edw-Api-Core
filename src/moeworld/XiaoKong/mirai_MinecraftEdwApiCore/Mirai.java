@@ -10,7 +10,6 @@ import java.io.IOException;
 
 public class Mirai extends PluginBase {
 	
-	
 	//插件被加载
 	public void onLoad()
 	{
@@ -27,53 +26,83 @@ public class Mirai extends PluginBase {
 
             //定义群消息指令开头
             if(messageInString.contains("..")) {
+
             	//获取发信者的qq
                 Long QQsender=event.getSender().getId();
-                //event.getSubject().sendMessage(QQsender+"触发了测试的消息指令头");
-
-				//尝试远程连接
-				try {
-					Rcon rcon = new Rcon(全局.远程地址, 全局.端口, 全局.密码.getBytes());
-					//匹配内容
-					String contant=messageInString;
-					contant=contant.substring(contant.indexOf("]")+1);
-
-                    if(全局.调试)
-                    {
-                        event.getSubject().sendMessage("捕获到的内容为：\n"+messageInString+
-                                "\n截取到的内容为：\n"+contant);
-                    }
-
-
-					正则匹配 zz=new 正则匹配();
-					contant=zz.match(contant,QQsender);
-
-					if(contant.equals("结束控制台"))
-					{
-						event.getSubject().sendMessage("控制台已经成功关闭！");
-					}
-					else if(contant.equals("未匹配到内容！"))
-					{
-                        if(全局.调试)
-                        {
-                            event.getSubject().sendMessage("您输入的指令有误！请重新输入！");
-                        }
-					}
-					else
-					{
-                        if(全局.调试)
-                        {
-                            event.getSubject().sendMessage("传入的指令为：\n"+contant);
-                        }
-						String result = rcon.command(contant);
-						// 输出结果
-						event.getSubject().sendMessage(result);
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
-				} catch (AuthenticationException e) {
-					e.printStackTrace();
+				if(全局.调试) {
+					event.getSubject().sendMessage(QQsender + "触发了测试的消息指令头");
 				}
+
+				//获取发送消息的群
+				Long QunSender=event.getGroup().getId();
+				if(全局.调试) {
+					event.getSubject().sendMessage("群：" + QunSender + " 触发了测试的消息指令头");
+				}
+
+				//判断来自的群
+				if(String.valueOf(QunSender).contains(全局.启用的群)) {
+
+					//尝试远程连接
+					try {
+						Rcon rcon = new Rcon(全局.远程地址, 全局.端口, 全局.密码.getBytes());
+						//匹配内容
+						String contant = messageInString;
+						contant = contant.substring(contant.indexOf("]") + 1);
+
+						if (全局.调试) {
+							event.getSubject().sendMessage("捕获到的内容为：\n" + messageInString +
+									"\n截取到的内容为：\n" + contant);
+						}
+
+
+						正则匹配 zz = new 正则匹配();
+						contant = zz.match(contant, QQsender);
+
+						if (contant.equals("结束控制台"))
+						{
+							event.getSubject().sendMessage("控制台已经成功关闭！");
+						}
+						else if (contant.equals("未匹配到内容！"))
+						{
+							if (全局.调试) {
+								event.getSubject().sendMessage("您输入的指令有误！请重新输入！");
+							}
+						}
+						else if (contant.equals("无执行命令权限"))
+						{
+							event.getSubject().sendMessage("你没有执行命令的权限！");
+						}
+						else
+						{
+							if (全局.调试) {
+								event.getSubject().sendMessage("传入的指令为：\n" + contant);
+							}
+							String result = rcon.command(contant);
+							// 输出结果
+							event.getSubject().sendMessage(result);
+						}
+					} catch (IOException e) {
+						e.printStackTrace();
+						if (全局.调试) {
+							event.getSubject().sendMessage("尝试与服务器建立通讯失败" +
+									"\n抛出了IOException错误");
+						}
+					} catch (AuthenticationException e) {
+						e.printStackTrace();
+						if (全局.调试) {
+							event.getSubject().sendMessage("尝试与服务器建立通讯失败" +
+									"\n抛出了AuthenticationException错误");
+						}
+					}
+
+				}
+				else
+				{
+					if (全局.调试) {
+						event.getSubject().sendMessage("群："+QunSender+"不在启用的群中");
+					}
+				}
+
                 return;
             }
 

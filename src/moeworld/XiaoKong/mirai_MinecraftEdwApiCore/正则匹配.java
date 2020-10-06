@@ -46,14 +46,24 @@ public class 正则匹配 {
             }
 
 
-            if (m.find( )) {
+            if (m.find( ))
+            {
                 String 命令=m.group(0).substring(5);
                 if(全局.调试)
                 {
                     System.out.println("截取出的命令为："+命令);
                 }
+                //管理员鉴权
+                if(全局.管理员QQ.contains(String.valueOf(QQsender)))
+                {
+                    return 命令;
+                }
+                else
+                {
+                    return "无执行命令权限";
+                }
 
-                return 命令;
+
              } 
             else 
              {
