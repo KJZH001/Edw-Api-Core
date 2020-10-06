@@ -1,3 +1,36 @@
+<div align="center">
+  
+  <img src="https://icdn.7t5j.cn/2020/10/04/bf4d144536c29.png" alt="樱夜天惠" title="made-with-pug.png" width="20%" />
+  &ensp;
+  <img src="https://icdn.7t5j.cn/2020/10/04/e399c383648ab.png" alt="空梦logo" title="cc-nc-sa.png" width="36%" />
+  <br>
+  <br>
+   
+<img src="https://icdn.7t5j.cn/2020/09/12/3b7a4d0cc69de.png" alt="made-with-pug.png" title="made-with-pug.png" width="20%" />
+&ensp;
+<img src="https://icdn.7t5j.cn/2020/09/12/a6f794a42dcb7.png" alt="cc-nc-sa.png" title="cc-nc-sa.png" width="36%" />
+&ensp;
+<img src="https://icdn.7t5j.cn/2020/09/12/652c75d23133c.png" alt="chat.png" title="chat.png" width="20%" />
+
+   
+---
+
+<p>在这介于虚幻于现实之间，而又万物皆可萌的世界之中</p>
+<p>彼此的相遇，又会带来怎样的奇迹呢</p>
+<p>♢</p>
+
+</div>
+
+## Edwforever 空梦永恒
+<br>
+<div align="center">
+<p>当幻想与现实交织，不再存在界限之时，所有的一切编不再区分于虚实</p>
+<p>于此，存在的一切也便成为了现实</p>
+</div>
+<div align="right">
+  <p>——空梦世界</p>
+</div>
+
 # **EdwApiCore**
 项目全名：EmptyDreamWorld Api Core For Minecraft Server
 
@@ -21,21 +54,23 @@ EdwApiCore是一个基于Mirai框架的Java插件
 
 这是一个尚且还在开发中的项目！请注意，因此我们不能保证其工作时的稳定性
 
-为了防止配置文件等方面出现意外，本插件的配置信息直接写死在源代码中！
+为了在开发调试过程中防止因配置文件等方面出现意外，本插件的配置信息直接写死在源代码中！
 允许自定义的配置都在```全局.java```文件中，如需修改请自行克隆修改后编译打包！
 
 - **将来可能会开发的功能**
-   - 对接Minecraft和QQ群中的白名单 (需要White_cola开发的BukkitWhiteList作为前置)
+   - 对接Minecraft和QQ群中的白名单 (需要White_cola开发的BukkitWhiteList作为前置) [已完成]
    - QQ群与Minecraft服务器中聊天互通
    - **等待添加...**
 
 ## 使用方法
 
-- 暂缺
+- 在任意qq群中发送指令
 
 ## 涉及指令
 
-无
+- ..执行 <远程的指令>
+- ..申请白名单 <玩家ID>
+- ..关闭
 
 ## 注意事项
 
@@ -44,15 +79,16 @@ EdwApiCore是一个基于Mirai框架的Java插件
 
 ## 安装教程
 
-下载编```译好的Jar```
+克隆或者下载本仓库中的源码
+
+修改```全局.java```这个类中的配置信息
+
+自行进行构建编译为JAR
 
 将其放入到您服务器的 `Mirai\plugins` 目录下
 
 最后请重启您的机器人并登陆bot
 
-当然，您也可以选择自行克隆源码编译jar，然后按照上面的方法安装
-
-不过我通常并不建议你这么做
 
 ## 使用许可
 
@@ -63,6 +99,20 @@ EdwApiCore是一个基于Mirai框架的Java插件
 但是请务必保留我对于此项目的署名
 
 仅供个人学习交流使用，切勿用作于违法以及商业用途
+
+## 关于形象
+
+形象 **樱夜天惠** 生成自 Waifu Labs
+
+二次改图 By 晓空
+
+仅供个人观赏以及学习交流，未经授权切勿随意使用
+
+请勿用于任何商业用途
+
+如需使用一律需要附上本说明和许可文件
+
+此外，若Waifu Labs认为在此处使用此形象违反了用户协议，请联系我们进行删除
 
 
 ## 免责声明
