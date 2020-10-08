@@ -90,6 +90,11 @@ EdwApiCore是一个基于Mirai框架的Java插件
 
 最后请重启您的机器人并登陆bot
 
+## 使用到的开源项目
+  
+  - Mirai Console
+  - Rkon
+
 
 ## 使用许可
 
